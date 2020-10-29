@@ -10,10 +10,19 @@ Provide him with a series of REST endpoints that meet all, or most of the RESTfu
 
 Write out each endpoint, its method, and brief description of waht it should do.
 
-| endpoint | method | Description            |
-| -------- | ------ | ---------------------- |
-| `/test`  | `GET`  | It is a test endpoint. |
-
 _This activity is more about the discussion in how to best organize data endpoints. There will not be any coding._
 
 ## Your Answer
+
+| endpoint         | method   | Description                                                          |
+| ---------------  | -------- | -------------------------------------------------------------------- |
+| `/customers`      | `GET`    | Retrieves a list of all the clients.                                 |
+| `/customers/:id`  | `GET`    | Retrieves a specific client profile.                                 |
+| `/customers/`     | `POST`   | Creates a new a client profile.                                      |
+| `/customers/:id`  | `PATCH`  | Modifies specific(s) attribute(s) in a client profile                |
+| `/customers/:id`  | `DELETE` | Deletes client profile                                               |
+| `/stocks/`        | `GET`    | Retrives a list of the all items                                     |
+| `/stocks/:id`     | `GET`    | Retrives specific item information                                   |
+| `/stocks/`        | `POST`   | Creates a new item to your stock list                                |
+| `/stocks/:id`     | `PATCH`  | Updates specific information about your item (quantity, price, etc.) |
+| `/stocks/:id`     | `DELETE` | Deletes an item if it's no longer needed in your stock list          |
